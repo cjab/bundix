@@ -4,7 +4,6 @@ require 'json'
 require 'net/http'
 require 'open3'
 require 'pp'
-require 'tmpdir'
 
 require_relative 'bundix/version'
 require_relative 'bundix/source'
@@ -13,7 +12,6 @@ require_relative 'bundix/nixer'
 class Bundix
   NIX_INSTANTIATE = 'nix-instantiate'
   NIX_PREFETCH_URL = 'nix-prefetch-url'
-  GIT = 'git'
   NIX_HASH = 'nix-hash'
   NIX_SHELL = 'nix-shell'
 
